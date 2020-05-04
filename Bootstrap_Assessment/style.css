@@ -1,0 +1,21 @@
+body{
+  background-color: #6500a8;
+  color: #e5d417;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.text-orange{
+  color: #ce951b;
+}
+
+.navbar{
+  padding: 0;
+}
+
+.jumbotron-center{
+  background-color: #6500a8;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
