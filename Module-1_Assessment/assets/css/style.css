@@ -4,10 +4,37 @@ body{
     background-image: url("../images/embossed-diamond.png");
 }
 
+#page{
+    position: relative;
+    min-height: 100vh;
+}
+
+#wrapper{
+    padding-bottom: 100px;
+}
+
+.content{
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+/*Headers and header bar*/
 h1, h2, h3, h4, h5{
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     color: #4aaaa5;
     font-weight: bold;
+}
+
+
+hr.title-bar{
+    border: 2px solid #dddddd
+}
+
+/*Colors and sizes*/
+.bg-teal{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border-radius: 0;
 }
 
 .bg-white{
@@ -26,40 +53,41 @@ input.font-grey, textarea.font-grey{
     border-style: solid;
 }
 
-
-hr.title-bar{
-    border: 2px solid #dddddd
-}
-
-.bg-teal{
-    background-color: #4aaaa5;
-    color: #ffffff;
-    border-radius: 0;
-}
-
 .w-15{
     width: 15%;
 }
 
-.content{
-    border: 2px solid #dddddd;
-    background-color: #ffffff;
 
-}
-
+/*Portfolio*/
 .card-label{
     position: relative;
     line-height: 250%;
     width: 100%;
     top: 66%;
+    font-weight: normal;
 }
 
-.footer{
+.card-col{
+    padding: 25px 20px 25px 15px;
+}
+
+.card-col ~ .card-col{
+    padding: 25px 15px 25px 20px;
+}
+
+/*Footer*/
+#footer{
     position: absolute;
     bottom: 0;
+    height: 90px;
     width: 100%;
     border-top: 10px solid #4aaaa5;
+}
 
+#footer span{
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
 }
 
 /*Overwrite the normal bootstrap max width for large screen to keep the content less than 960px*/
