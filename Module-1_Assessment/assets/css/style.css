@@ -46,6 +46,14 @@ hr.title-bar{
     background-color: #ffffff;
 
 }
+
+.card-label{
+    position: relative;
+    line-height: 250%;
+    width: 100%;
+    top: 66%;
+}
+
 .footer{
     position: absolute;
     bottom: 0;
