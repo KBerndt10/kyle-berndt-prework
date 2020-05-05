@@ -1,0 +1,44 @@
+body{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/embossed-diamond.png");
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+.bg-white{
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-bottom: 1px solid;
+}
+
+.font-grey{
+    color: #777777;
+}
+
+.bg-teal{
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.content{
+    border: 2px solid #dddddd;
+
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid #4aaaa5;
+
+}
+
+/*Overwrite the normal bootstrap max width for large screen to keep the content less than 960px*/
+@media (min-width: 1200px){
+    .container {
+        max-width: 960px!important;
+    }
+}
