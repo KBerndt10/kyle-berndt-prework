@@ -7,6 +7,7 @@ body{
 h1, h2, h3, h4, h5{
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     color: #4aaaa5;
+    font-weight: bold;
 }
 
 .bg-white{
@@ -19,13 +20,30 @@ h1, h2, h3, h4, h5{
     color: #777777;
 }
 
+input.font-grey, textarea.font-grey{
+    border-color: #dddddd;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+hr.title-bar{
+    border: 2px solid #dddddd
+}
+
 .bg-teal{
     background-color: #4aaaa5;
     color: #ffffff;
+    border-radius: 0;
+}
+
+.w-15{
+    width: 15%;
 }
 
 .content{
     border: 2px solid #dddddd;
+    background-color: #ffffff;
 
 }
 .footer{
