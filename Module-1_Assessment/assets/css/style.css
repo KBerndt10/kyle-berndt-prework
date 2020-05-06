@@ -37,6 +37,10 @@ hr.title-bar{
     border-radius: 0;
 }
 
+.bg-footer{
+    background-color: #666666;
+}
+
 .bg-white{
     background-color: #ffffff;
     border-color: #cccccc;
