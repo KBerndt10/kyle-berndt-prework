@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Ringbearer Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ringbearer Medium'), url('../fonts/RINGM___.woff') format('woff');
+    }
+
+body{
+    font-family: 'Morris Roman', sans-serif;
+    min-height: 100vh;
+    background-image: url(../images/bg.jpg);
+}
+
+span{
+    font-size: 1.75rem;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-family: 'Ringbearer Medium'; 
+    color: goldenrod;
+    text-shadow: 3px 3px black;
+}

@@ -3,7 +3,7 @@ const maxGuesses = 12;
 const game = {
     wordSpan: document.querySelector('#word'),
     winMessageSpan: document.querySelector('#win-message'),
-    winCountH4: document.querySelector('#win-count'),
+    winCountSpan: document.querySelector('#win-count'),
     guessesSpan: document.querySelector('#guesses'),
     lettersSpan: document.querySelector('#letters-guessed'),
     dispImg: document.querySelector('#disp-img'),
@@ -145,7 +145,7 @@ const game = {
     updateDOM: function () {
         this.updateLetters();
         this.updateWord();
-        game.winCountH4.innerText = this.wins;
+        game.winCountSpan.innerText = this.wins;
         game.winMessageSpan.innerText = this.winMessage;
     },
 }

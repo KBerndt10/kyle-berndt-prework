@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Hangman</title>
+  <link href="https://fonts.cdnfonts.com/css/morris-roman" rel="stylesheet">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -17,15 +19,20 @@
     <source src="assets/sounds/findaway.mp3" type="audio/mpeg">
     Your browser does not support the sudio element
   </audio>
-  <div class="container">
 
+  <header class="text-center pt-5 pb-5">
+    <h1 class="title">
+      The Lord of The Rings
+    </h1>
+  </header>
+
+
+  <div class="container align-middle">
     <div class="row text-center">
       <div class="col-sm">
-        <img src="assets/images/logo.png" alt="The Lord of the Rings">
+
       </div>
     </div>
-
-
 
     <div class="row">
       <div class="col-sm-6">
@@ -51,13 +58,13 @@
 
         <div class="row text-center">
           <div class="col-sm">
-            <h4>WINS</h4>
+            <h3>Wins</h3>
           </div>
         </div>
 
         <div class="row text-center">
           <div class="col-sm">
-            <h4 id="win-count"></h4>
+            <span id="win-count"></span>
           </div>
         </div>
       </div>
@@ -65,13 +72,13 @@
       <div class="col-sm-6">
         <div class="row text-center">
           <div class="col-sm">
-            <h4>PRESS ANY KEY TO GET STARTED!</h4>
+            <h3>Press any key to get started!</h3>
           </div>
         </div>
 
         <div class="row text-center">
           <div class="col-sm">
-            <h4>CURRENT WORD</h4>
+            <h3>Current Word</h3>
           </div>
         </div>
 
@@ -83,7 +90,7 @@
 
         <div class="row text-center">
           <div class="col-sm">
-            <h4>NUMBER OF GUESSES REMAINING</h4>
+            <h3>Number of Guesses Remaining</h3>
           </div>
         </div>
 
@@ -98,7 +105,7 @@
 
     <div class="row text-center">
       <div class="col-sm">
-        <h4>LETTERS ALREADY GUESSED</h4>
+        <h3>Letters Already Guessed</h3>
       </div>
     </div>
     <div class="row text-center">
@@ -107,12 +114,15 @@
       </div>
     </div>
 
-      <footer class="col-sm">
-        <p>
-          All images and sounds are from the Lord of the Rings movies directed by Peter Jackson.
-          The sounds were extracted by <a href="http://www.moviesoundclips.net">moviesoundclips.net</a>.
-        </p>
-      </footer>
+    <footer class="col-sm text-center fixed-bottom">
+      <p>
+        All images and sounds are from the Lord of the Rings movies directed by Peter Jackson.
+        The sounds were extracted by <a href="http://www.moviesoundclips.net">moviesoundclips.net</a>.
+        The font Morris Black is from <a href="https://www.cdnfonts.com/">cdnfonts.com</a>
+        The font Ringbearer is from <a hrek="https://www.cufonfonts.com/">cufonfonts.com</a>
+        Background is from <a href="http://sfwallpaper.com/">sfwallpaper.com</a>
+      </p>
+    </footer>
 
   </div>
 
