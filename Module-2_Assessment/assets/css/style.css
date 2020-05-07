@@ -6,13 +6,21 @@
     }
 
 body{
-    font-family: 'Morris Roman', sans-serif;
+    font-family: 'Aniron', sans-serif;
     min-height: 100vh;
     background-image: url(../images/bg.jpg);
 }
 
 span{
     font-size: 1.75rem;
+}
+
+.font-morris{
+    font-family: 'Morris Roman', sans-serif;
+}
+
+h2.font-morris{
+    font-size: 2.75rem;
 }
 
 .title{
