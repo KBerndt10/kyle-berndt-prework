@@ -32,13 +32,32 @@ const game = {
         if(!game.lettersGuessed.includes(key) && !game.lettersKnown.includes(key) && game.isLetter(key)){
             if(game.word.toUpperCase().includes(key)){
                 game.lettersKnown.push(key);
+                game.checkWin();
                 game.updateWord();
             } 
             else{
                 game.lettersGuessed.push(key);
-                game.guesses--;
+                game.guessWrong();
                 game.updateLetters();
             }
+        }
+    },
+
+    checkWin: function(){
+        for(let i = 0; i < this.word.length; i++){
+            const ltr = this.word.charAt(i).toUpperCase();
+            if(!this.lettersKnown.includes(ltr)){
+                return;
+            }
+        }
+        this.wins++;
+        this.newRound();
+    },
+
+    guessWrong: function(){
+        this.guesses--;
+        if(this.guesses <= 0){
+            this.newRound();
         }
     },
 
