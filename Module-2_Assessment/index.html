@@ -9,27 +9,36 @@
 </head>
 
 <body>
+  <audio id="clever-audio">
+    <source src="assets/sounds/clever.mp3" type="audio/mpeg">
+    Your browser does not support the sudio element
+  </audio>
+  <audio id="find-way-audio">
+    <source src="assets/sounds/findaway.mp3" type="audio/mpeg">
+    Your browser does not support the sudio element
+  </audio>
   <div class="container">
 
-    <div class="row">
+    <div class="row text-center">
       <div class="col-sm">
-        <h1>
-          The Lord of the Rings Hangman
-        </h1>
+        <img src="assets/images/logo.png" alt="The Lord of the Rings">
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm">
-        <span id="win-message"></span>
-      </div>
-    </div>
+
 
     <div class="row">
       <div class="col-sm-6">
-        <div class="row">
+
+        <div class="row text-center">
           <div class="col-sm">
-            <!--TODO: <img src="" alt="" id="">-->
+            <span id="win-message"></span>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm">
+            <img src="assets/images/onering.jpg" alt="The One Ring" id="disp-img">
 
           </div>
         </div>
@@ -40,13 +49,13 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
             <h4>WINS</h4>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
             <h4 id="win-count"></h4>
           </div>
@@ -54,31 +63,31 @@
       </div>
 
       <div class="col-sm-6">
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
             <h4>PRESS ANY KEY TO GET STARTED!</h4>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
             <h4>CURRENT WORD</h4>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
-            <span id="word"></span>
+            <span id="word" class="text-center"></span>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
             <h4>NUMBER OF GUESSES REMAINING</h4>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm">
             <span id="guesses"></span>
           </div>
@@ -87,17 +96,23 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row text-center">
       <div class="col-sm">
         <h4>LETTERS ALREADY GUESSED</h4>
       </div>
     </div>
-    <div class="row">
+    <div class="row text-center">
       <div class="col-sm">
         <span id="letters-guessed"></span>
       </div>
     </div>
 
+      <footer class="col-sm">
+        <p>
+          All images and sounds are from the Lord of the Rings movies directed by Peter Jackson.
+          The sounds were extracted by <a href="http://www.moviesoundclips.net">moviesoundclips.net</a>.
+        </p>
+      </footer>
 
   </div>
 

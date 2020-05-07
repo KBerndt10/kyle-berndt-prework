@@ -6,6 +6,9 @@ const game = {
     winCountH4: document.querySelector('#win-count'),
     guessesSpan: document.querySelector('#guesses'),
     lettersSpan: document.querySelector('#letters-guessed'),
+    dispImg: document.querySelector('#disp-img'),
+    cleverAudio: document.querySelector('#clever-audio'),
+    findWayAudio: document.querySelector('#find-way-audio'),
     guesses: 12,
     lettersGuessed: [],
     lettersKnown: [],
@@ -27,7 +30,7 @@ const game = {
         {
             word: "Gollum",
             pic: "gollum.jpg",
-            msg: "Gollum, Lover of the Precious"
+            msg: "Gollum, lover of the Precious"
         },
         {
             word: "Legolas",
@@ -98,6 +101,8 @@ const game = {
         }
         this.wins++;
         this.winMessage = this.topic.msg;
+        this.dispImg.src = `assets/images/${this.topic.pic}`;
+        this.cleverAudio.play();
         this.newRound();
     },
 
@@ -105,6 +110,7 @@ const game = {
     guessWrong: function () {
         this.guesses--;
         if (this.guesses <= 0) {
+            this.findWayAudio.play();
             this.newRound();
         }
     },
