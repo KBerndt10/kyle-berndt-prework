@@ -42,6 +42,31 @@ const game = {
             pic: "gimli.jpg",
             msg: "Gimli, son of Glóin"
         },
+        {
+            word: "Isengard",
+            pic: "isengard.jpg",
+            msg: "Isengard, Saruman's fortress"
+        },
+        {
+            word: "Eye of Sauron",
+            pic: "eyeofsauron.jpg",
+            msg: "The Eye of Sauron"
+        },
+        {
+            word: "Galadriel",
+            pic: "galadriel.jpg",
+            msg: "Galadriel, Lady of the woods of Lothlorien"
+        },
+        {
+            word: "Sting",
+            pic: "sting.jpg",
+            msg: "Sting, Frodo's blade"
+        },
+        {
+            word: "Samwise Gamgee",
+            pic: "samwisegamgee.jpg",
+            msg: "Samwise Gamgee, loyal friend"
+        },
     ],
     usedTopics: [],
 
@@ -65,7 +90,7 @@ const game = {
 
         const index = Math.floor(Math.random() * this.topics.length);
         this.topic = this.topics[index];
-        this.topics[index] = this.topics[this.topics.length-1];
+        this.topics[index] = this.topics[this.topics.length - 1];
         this.topics.pop();
         this.usedTopics.push(this.topic);
         this.word = this.topic.word;
@@ -121,24 +146,27 @@ const game = {
     },
 
     // Updates the number of guesses and previously guessed letters elements on the page
-    updateLetters: function () {
+    updateLetters: function () { 
         game.lettersSpan.innerText = this.lettersGuessed.join();
         game.guessesSpan.innerText = this.guesses;
     },
 
-    // Creates and display the partial word based on known letters and displays it
+    // Creates and displays the partial word based on known letters and displays it
     updateWord: function () {
-        let disp = '';
-        const wordUpper = this.word.toUpperCase();
+        let wordHTML = '';
         for (let i = 0; i < this.word.length; i++) {
-            const letter = wordUpper.charAt(i);
-            if (this.lettersKnown.includes(letter) || !this.isLetter(letter)) {
-                disp += letter;
+            const letter = this.word.charAt(i);
+            if (this.lettersKnown.includes(letter.toUpperCase()) || !this.isLetter(letter)) {
+                if (letter === ' ') {
+                    wordHTML += '&emsp;';
+                } else {
+                    wordHTML += letter;
+                }
             } else {
-                disp += ' _ ';
+                wordHTML += ' _ ';
             }
         }
-        this.wordSpan.innerText = disp;
+        this.wordSpan.innerHTML = wordHTML;
     },
 
     // Updates every changeable part of the document

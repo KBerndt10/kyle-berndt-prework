@@ -1,9 +1,10 @@
+/* adds Ringbearer font*/
 @font-face {
     font-family: 'Ringbearer Medium';
     font-style: normal;
     font-weight: normal;
     src: local('Ringbearer Medium'), url('../fonts/RINGM___.woff') format('woff');
-    }
+}
 
 body{
     font-family: 'Aniron', sans-serif;
@@ -13,6 +14,19 @@ body{
 
 span{
     font-size: 1.75rem;
+}
+
+
+.title{
+    font-size: 3.5rem;
+    font-family: 'Ringbearer Medium'; 
+    color: goldenrod;
+    text-shadow: 3px 3px black;
+}
+
+#disp-img{
+    max-height: 100%;
+    max-width: 100%;;
 }
 
 .font-morris{
@@ -37,11 +51,4 @@ h2.font-morris{
     bottom: 0;
     width: 100%;
     height: 100px;
-}
-
-.title{
-    font-size: 3.5rem;
-    font-family: 'Ringbearer Medium'; 
-    color: goldenrod;
-    text-shadow: 3px 3px black;
 }
