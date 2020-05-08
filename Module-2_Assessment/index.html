@@ -21,100 +21,107 @@
     Your browser does not support the sudio element
   </audio>
 
-  <header class="text-center pt-5 pb-5">
-    <h1 class="title">
-      The Lord of The Rings
-    </h1>
-  </header>
+  <div id="content">
+    <div id="wrapper">
 
-  <div class="container">
-    <div class="row text-center mb-3 pb-3">
-      <div class="col-sm">
-        <h2 class="font-morris">Press any key to get started!</h2>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-6">
+      <header class="text-center pt-5 pb-5">
+        <h1 class="title">
+          The Lord of The Rings
+        </h1>
+      </header>
+
+      <div class="container">
+        <div class="row text-center mb-3 pb-3">
+          <div class="col-sm">
+            <h2 class="font-morris">Press any key to get started!</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row text-center">
+              <div class="col-sm">
+                <img src="assets/images/onering.jpg" alt="The One Ring" id="disp-img">
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-sm">
+                <span id="win-message" class="font-morris"></span>
+              </div>
+            </div>
+
+            <div class="row text-center mt-3">
+              <div class="col-sm">
+                <h3>Wins</h3>
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-sm">
+                <span id="win-count"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+
+            <div class="h-50">
+              <div class="row text-center">
+                <div class="col-sm">
+                  <h3>Current Word</h3>
+                </div>
+              </div>
+
+              <div class="row text-center">
+                <div class="col-sm">
+                  <span id="word" class="text-center"></span>
+                </div>
+              </div>
+            </div>
+            <div class="h-50">
+              <div class="row text-center">
+                <div class="col-sm">
+                  <h3>Number of Guesses Remaining</h3>
+                </div>
+              </div>
+
+              <div class="row text-center">
+                <div class="col-sm">
+                  <span id="guesses"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <div class="row text-center">
           <div class="col-sm">
-            <img src="assets/images/onering.jpg" alt="The One Ring" id="disp-img">
+            <h2 class="font-morris">Letters Already Guessed</h2>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-sm">
-            <span id="win-message" class="font-morris"></span>
+            <span id="letters-guessed"></span>
           </div>
-        </div>
-
-        <div class="row text-center mt-3">
-          <div class="col-sm">
-            <h3>Wins</h3>
-          </div>
-        </div>
-
-        <div class="row text-center">
-          <div class="col-sm">
-            <span id="win-count"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-
-        <div class="h-50">
-          <div class="row text-center">
-            <div class="col-sm">
-              <h3>Current Word</h3>
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-sm">
-              <span id="word" class="text-center"></span>
-            </div>
-          </div>
-        </div>
-        <div class="h-50">
-          <div class="row text-center">
-            <div class="col-sm">
-              <h3>Number of Guesses Remaining</h3>
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-sm">
-              <span id="guesses"></span>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
 
-    <div class="row text-center">
-      <div class="col-sm">
-        <h2 class="font-morris">Letters Already Guessed</h2>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-sm">
-        <span id="letters-guessed"></span>
-      </div>
-    </div>
+
+    <footer class="col-sm text-center" id="footer">
+      <p>
+        All images and sounds are from the Lord of the Rings movies directed by Peter Jackson.
+        The sounds were extracted by <a href="http://www.moviesoundclips.net">moviesoundclips.net</a>.
+        The fonts Morris Roman & Aniron are from <a href="https://www.cdnfonts.com/">cdnfonts.com</a>
+        The font Ringbearer is from <a hrek="https://www.cufonfonts.com/">cufonfonts.com</a>
+        Background is from <a href="http://sfwallpaper.com/">sfwallpaper.com</a>
+      </p>
+    </footer>
   </div>
 
-
-  <footer class="col-sm text-center fixed-bottom">
-    <p>
-      All images and sounds are from the Lord of the Rings movies directed by Peter Jackson.
-      The sounds were extracted by <a href="http://www.moviesoundclips.net">moviesoundclips.net</a>.
-      The fonts Morris Roman & Aniron are from <a href="https://www.cdnfonts.com/">cdnfonts.com</a>
-      The font Ringbearer is from <a hrek="https://www.cufonfonts.com/">cufonfonts.com</a>
-      Background is from <a href="http://sfwallpaper.com/">sfwallpaper.com</a>
-    </p>
-  </footer>
   <script src="assets/javascript/game.js" type="text/javascript"></script>
 </body>
 
